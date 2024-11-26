@@ -5,11 +5,12 @@
 ![Screenshot 1](Screenshots/Root1.png)  
 ![Screenshot 2](Screenshots/Root2.png)  
 
-2. build the solution  
+2. build the solution using dotnet build  
 ![Screenshot 3](Screenshots/Build1.png)  
 ![Screenshot 4](Screenshots/Build2.png)  
 
 3. Publish the project as an executable starting from the Api project.  
+using dotnet publish ./EmployeeManager.Api/EmployeeManager.Api.csproj -c Release -r win-x64 --self-contained  
 ![Screenshot 5](Screenshots/Publish1.png)  
 -c Release specifies that the app will be released with the release configuration  
 -r win-x64 specifies the target runtime, can be changed to linux-x64 or osx-x64 as required  
